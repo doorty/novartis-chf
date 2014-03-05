@@ -1,0 +1,178 @@
+.hidden {
+  display: none; }
+
+body.smiley {
+  background-color: #ffffff; }
+  body.smiley > .container {
+    margin: 0;
+    padding: 0; }
+    body.smiley > .container .main-content {
+      width: 300px;
+      position: relative;
+      top: 91px; }
+  body.smiley hr {
+    margin: 0; }
+  body.smiley .main-nav {
+    position: fixed;
+    background: #fff;
+    z-index: 99; }
+    body.smiley .main-nav h6 {
+      text-align: center; }
+    body.smiley .main-nav a {
+      border-radius: 0; }
+      body.smiley .main-nav a.patient {
+        padding: 0;
+        margin: 0; }
+        body.smiley .main-nav a.patient:hover {
+          padding: 0;
+          margin: 0; }
+  body.smiley #message-box {
+    position: relative; }
+    body.smiley #message-box textarea {
+      border: 0;
+      margin-left: -15px; }
+    body.smiley #message-box .input-group-btn {
+      position: absolute;
+      top: 38px;
+      left: 198px; }
+    body.smiley #message-box .dropdown-menu {
+      position: absolute;
+      top: 38px;
+      left: -77px; }
+  body.smiley .date {
+    text-align: center; }
+  body.smiley ul.smiley-section {
+    display: table;
+    margin: 0; }
+    body.smiley ul.smiley-section li {
+      display: table-row; }
+      body.smiley ul.smiley-section li .cell-container-outer {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        width: 50%; }
+        body.smiley ul.smiley-section li .cell-container-outer .cell {
+          border: 1px solid #666;
+          height: 200px; }
+          body.smiley ul.smiley-section li .cell-container-outer .cell .face.front .content {
+            margin: auto; }
+          body.smiley ul.smiley-section li .cell-container-outer .cell .face.front h3 {
+            color: #333; }
+          body.smiley ul.smiley-section li .cell-container-outer .cell .face.back {
+            height: inherit;
+            overflow: scroll; }
+            body.smiley ul.smiley-section li .cell-container-outer .cell .face.back .content {
+              padding: 5px 12px 5px 12px; }
+            body.smiley ul.smiley-section li .cell-container-outer .cell .face.back .title {
+              text-align: left;
+              color: #fff;
+              padding: 5px 0 5px 15px;
+              margin-bottom: 0;
+              font-size: 14px; }
+              body.smiley ul.smiley-section li .cell-container-outer .cell .face.back .title.good {
+                background: #007c1e; }
+              body.smiley ul.smiley-section li .cell-container-outer .cell .face.back .title.bad {
+                background: #bd362f; }
+              body.smiley ul.smiley-section li .cell-container-outer .cell .face.back .title.neutral {
+                background: #ffab00; }
+            body.smiley ul.smiley-section li .cell-container-outer .cell .face.back h3, body.smiley ul.smiley-section li .cell-container-outer .cell .face.back h4, body.smiley ul.smiley-section li .cell-container-outer .cell .face.back h5, body.smiley ul.smiley-section li .cell-container-outer .cell .face.back p {
+              text-align: left;
+              margin-top: 0; }
+            body.smiley ul.smiley-section li .cell-container-outer .cell .face.back .smiley-close {
+              float: right;
+              margin-right: 15px; }
+  body.smiley ul.smiley-section {
+    margin: 0;
+    padding: 0;
+    width: 100%; }
+    body.smiley ul.smiley-section li .cell-container-inner {
+      position: relative;
+      z-index: 1;
+      -webkit-perspective: 1000; }
+      body.smiley ul.smiley-section li .cell-container-inner .cell {
+        -webkit-transform-style: preserve-3d;
+        -webkit-transition: all 1.0s linear; }
+        body.smiley ul.smiley-section li .cell-container-inner .cell.flipped {
+          -webkit-transform: rotateY(180deg); }
+        body.smiley ul.smiley-section li .cell-container-inner .cell .face {
+          position: absolute;
+          width: 100%;
+          -webkit-backface-visibility: hidden; }
+          body.smiley ul.smiley-section li .cell-container-inner .cell .face.back {
+            -webkit-transform: rotateY(180deg);
+            -webkit-box-sizing: border-box; }
+  body.smiley .smiley {
+    display: inline-block;
+    background: url("../images/smiley-smaller.png");
+    width: 130px;
+    height: 130px; }
+    body.smiley .smiley h3 {
+      color: #666; }
+    body.smiley .smiley.smile {
+      background-position: 0 0; }
+    body.smiley .smiley.frown {
+      background-position: -130px 0; }
+    body.smiley .smiley.neutral {
+      background-position: -260px 0; }
+    body.smiley .smiley.oh {
+      background-position: 0 -130px; }
+    body.smiley .smiley.cry {
+      background-position: -130px -130px; }
+    body.smiley .smiley.tongue {
+      background-position: -260px -130px; }
+    body.smiley .smiley.teeth {
+      background-position: 0 -260px; }
+    body.smiley .smiley.unsure {
+      background-position: -130px -260px; }
+    body.smiley .smiley.open {
+      background-position: -260px -260px; }
+  body.smiley .smiley-details h2 {
+    padding-top: 10px; }
+    body.smiley .smiley-details h2 .btn-group {
+      float: right; }
+  body.smiley #meds-info table {
+    font-size: smaller; }
+    body.smiley #meds-info table .fa-times {
+      color: #bd362f; }
+    body.smiley #meds-info table .fa-check {
+      color: #007c1e; }
+  body.smiley #feelings-info hr {
+    margin: 1em 0; }
+  body.smiley #feelings-info .scale {
+    overflow: hidden; }
+    body.smiley #feelings-info .scale b {
+      display: inline-block;
+      width: 150px;
+      color: #666; }
+      body.smiley #feelings-info .scale b:first-child {
+        float: left; }
+      body.smiley #feelings-info .scale b:last-child {
+        float: right;
+        text-align: right; }
+  body.smiley #feelings-info .slider {
+    margin-left: 20px;
+    width: 250px; }
+  body.smiley #page-smiley {
+    padding-bottom: 10px; }
+  body.smiley #page-caregiver h2 {
+    padding-top: 10px; }
+    body.smiley #page-caregiver h2 .btn-group {
+      float: right; }
+  body.smiley #page-doctor h2 {
+    padding-top: 10px; }
+    body.smiley #page-doctor h2 .btn-group {
+      float: right; }
+  body.smiley #page-patient h2 {
+    text-align: center; }
+  body.smiley #page-patient .day-list a {
+    border: 0; }
+    body.smiley #page-patient .day-list a .fa-check-square-o {
+      color: #007c1e; }
+    body.smiley #page-patient .day-list a .present1 {
+      color: #c400ff; }
+    body.smiley #page-patient .day-list a .present2 {
+      color: #2028ff; }
+    body.smiley #page-patient .day-list a .present3 {
+      color: #ff8500; }
+  body.smiley #page-patient .smiley-indicator {
+    text-align: center; }

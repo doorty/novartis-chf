@@ -1,0 +1,356 @@
+// Place all the styles related to the Highlights controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.hidden {
+	display: none;
+}
+
+body.smiley {
+
+	background-color: #ffffff;
+
+	> .container {
+		margin:0;
+		padding:0;
+		//overflow-x:hidden;
+	
+		.main-content {
+			width:300px;
+			position: relative;
+			top:91px;
+		}
+
+	}
+	
+	hr {
+		margin:0;
+	}
+
+	.main-nav {
+		position: fixed;
+		//bottom:0;
+		background: #fff;
+		z-index: 99;
+		h6 {
+			text-align: center;
+		}
+		a {
+			border-radius: 0;
+			&.home {
+				//color:darkblue;
+			}
+			&.chf {
+				//color:darkblue;
+			}
+			&.patient {
+				padding: 0;
+				margin:0;
+				&:hover {
+					padding: 0;
+					margin:0;
+				}
+				//color:darkblue;
+			}
+			&.doctor {
+			 	//color:darkblue;
+			}
+			&.caregiver {
+				//color:darkblue;
+			}
+		}
+	
+	}
+	
+	
+	#message-box {
+		position: relative;
+		textarea {
+			border: 0;
+			margin-left:-15px;
+		}
+		.input-group-btn {
+			position: absolute;
+			top: 38px;
+			left: 198px;
+		}
+		.dropdown-menu {
+			position: absolute;
+			top:38px;
+			left:-77px;
+		}
+	}
+	
+	.date {
+		text-align: center;
+	}
+	
+	// style the smiley faces (not flipping)
+	ul.smiley-section {
+	  display: table;
+	  //border-collapse: separate;
+	  //border-spacing: 5px;
+	  margin: 0;
+	  //border: 1px solid #666;
+	  //-webkit-border-radius: 15px;
+	  li {
+	    display: table-row;
+	    .cell-container-outer {
+	      display: table-cell;
+	      text-align: center;
+	      vertical-align: middle;
+	      width: 50%;
+	      
+	      .cell {
+	      	border: 1px solid #666;
+	      	height: 200px;
+					
+	      	.face {
+	      		
+	      	
+	      		&.front {
+	      		
+	      			.content {
+			            margin: auto;
+			          }
+			        h3 {
+				        color:#333;
+			        }
+	      		}
+	      		
+	      		&.back {
+	      			height: inherit;
+		      		overflow: scroll;
+		      		.content {
+			      		padding:5px 12px 5px 12px;
+		      		}
+		      		.title {
+						    text-align: left;
+						    color:#fff;
+						    padding:5px 0 5px 15px;
+						    margin-bottom: 0;
+						    font-size: 14px;
+						    &.good {
+							    background: #007c1e;
+						    }
+						    &.bad {
+							    background: #bd362f;
+						    }
+						    &.neutral {
+							    background:#ffab00;
+						    }
+		      		}
+		      		h3,h4,h5,p {
+			      		text-align: left;
+			      		margin-top:0;
+		      		}
+		      		.smiley-close {
+			      		float: right;
+			      		margin-right: 15px;
+		      		}
+	      		}
+	        
+	        }
+	        
+	       }
+			}
+		} 
+	}
+	
+	#meds-cell {
+		
+	}
+	
+	#activity-cell {
+		
+	}
+	
+	#diet-cell {
+		
+	}
+	
+	#feelings-cell {
+		
+	}
+	
+	// code specific to flip
+	
+	ul.smiley-section {
+		margin:0;
+		padding: 0;
+		width: 100%;
+	  li {
+	
+	    .cell-container-inner {
+	      position: relative;
+	      z-index: 1;
+	      -webkit-perspective: 1000;
+	    
+	      .cell {
+	        -webkit-transform-style: preserve-3d;
+	        -webkit-transition: all 1.0s linear;
+	        
+	        &.flipped {
+	          -webkit-transform: rotateY(180deg);
+	        }
+	        
+	        .face {
+	        	position: absolute;
+	        	width: 100%;
+	          -webkit-backface-visibility: hidden;
+	        
+	          &.front {
+	            //background: #ccc;
+	          }
+	          
+	          &.back {
+	            -webkit-transform: rotateY(180deg);
+	            -webkit-box-sizing: border-box;
+	            //background: #aaa;
+	          }
+	        }
+	      }
+	    }
+	  }
+	}
+	
+	
+	// smiley sprite
+	.smiley {
+		display: inline-block;
+	  background: url("../images/smiley-smaller.png");
+	  //margin:-20px 0 0 -25px;
+	  width:130px;
+	  height:130px;
+	  h3 {
+		  color:#666;
+	  }
+	  &.smile {
+	    background-position: 0 0;
+	  }
+	  &.frown {
+	    background-position: -130px 0;
+	  }
+	  &.neutral {
+	    background-position: -260px 0;
+	  }
+	  &.oh {
+	    background-position: 0 -130px;
+	  }
+	  &.cry {
+	    background-position: -130px -130px;
+	  }
+	  &.tongue {
+	    background-position: -260px -130px;
+	  }
+	  &.teeth {
+	    background-position: 0 -260px;
+	  }
+	  &.unsure {
+	    background-position: -130px -260px;
+	  }
+	  &.open {
+	    background-position: -260px -260px;
+	  }
+	}
+	
+	.smiley-details {
+		h2 {
+			padding-top:10px;
+			.btn-group {
+				float:right;
+			}
+		}
+	}
+	
+	#meds-info {
+		table {
+			font-size: smaller;
+			.fa-times {
+				color:#bd362f;
+			}
+			.fa-check {
+				color:#007c1e;
+			}
+		}
+	}
+	
+	#feelings-info {
+		hr {
+			margin:1em 0;
+		}
+		.scale {
+			overflow: hidden;
+			b {
+				display: inline-block;
+				width:150px;
+				color:#666;
+				&:first-child {
+					float:left;
+				}
+				&:last-child {
+					float:right;
+					text-align: right;
+				}
+			}
+		}
+		
+		.slider {
+			margin-left:20px;
+			width:250px;
+		}
+	}
+	
+	#page-smiley {
+		padding-bottom: 10px;
+	}
+	
+	#page-caregiver {
+		h2 {
+			padding-top:10px;
+			.btn-group {
+				float:right;
+			}
+		}
+	}
+	
+	#page-doctor {
+		h2 {
+			padding-top:10px;
+			.btn-group {
+				float:right;
+			}
+		}
+	}
+	
+	#page-patient {
+	
+		h2 {
+			text-align: center;
+		}
+		
+		.day-list {
+			a {
+				border:0;
+				.fa-check-square-o {
+					color:#007c1e;
+				}
+				.present1 {
+					color:#c400ff;
+				}
+				.present2 {
+					color:#2028ff;
+				}
+				.present3 {
+					color:#ff8500;
+				}
+			}
+		}
+		
+		.smiley-indicator {
+			text-align: center;
+		}
+	}
+	
+	
+} // body

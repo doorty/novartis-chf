@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link rel="apple-touch-icon" href="images/dad-icon.png">
+	<title>CHF</title>
+	<link rel="stylesheet" type="text/css" href="css/sass-bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/slider.css" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+</head>
+<body class="smiley">
+
+	<div class="container">
+
+		<div class="btn-group btn-group-justified main-nav">
+			<a id="home-btn" href="#" class="btn btn-default home">
+				<div class="center"><i class="fa fa-home fa-3x"></i></div>
+		  	<h6>HOME</h6>
+			</a>
+			<a id="chf-btn" href="#" class="btn btn-default chf">
+				<div class="center"><i class="fa fa-heart fa-3x"></i></div>
+		  	<h6>CHF</h6>
+			</a>
+			<a id="patient-btn" href="#" class="btn btn-default patient">
+				<div class="center"><img src="images/dad.png" width="64" height="89" /></div>
+			</a>
+			<a id="doctor-btn" href="#" class="btn btn-default doctor">
+				<div class="center"><i class="fa fa-user-md fa-3x"></i></div>
+		  	<h6>DOC</h6>
+			</a>
+			<a id="caregiver-btn" href="#" class="btn btn-default caregiver">
+				<div class="center"><i class="fa fa-female fa-3x"></i></div>
+		  	<h6>CARE</h6>
+			</a>
+		</div><!-- .main-nav -->
+
+		<div class="row">
+		
+			<div class="container main-content">
+
+				<div id="top-content" class="row"></div>
+
+				<!-- date -->
+				<div id="page-date" class="row">
+					<h4 class="date">October 27th</h4>
+				</div>
+
+				<hr>
+
+				<!-- smiley -->
+				<div id="page-smiley" class="row">
+					
+						<ul class="smiley-section">
+					    <li>
+					      <div class="cell-container-outer">
+					        <div class="cell-container-inner">
+					          <div id="meds-cell" class="cell">
+					            <div class="front face">
+					              <a href="#" class="meds">
+					              	<div class="content">
+					                  <div class="smiley frown"></div>
+					                  <h3>Meds</h3>
+					                </div>
+					              </a>
+					            </div>
+					            <div class="back face">
+					            	<!-- <div id="meds-smiley-close" class="smiley-close"><i class="fa fa-times fa-2x"></i></div> -->
+					            	<h5 class="title bad">Medications <div class="smiley-close"><i class="fa fa-times fa-lg"></i></div></h5>
+					            	<div class="content">
+						              <h4>Missed at 1pm</h4>
+						              <p><a href="#meds-info" class="btn btn-large btn-block btn-danger medications-btn"><i class="fa fa-phone"></i> Call Dad</a></p>
+						              <p><a href="#meds-info" class="btn btn-large btn-block medications-btn">More Info</a></p>
+					            	</div>
+					            </div>
+					          </div>
+					        </div>
+					      </div>
+					      <div class="cell-container-outer">
+					        <div class="cell-container-inner">
+					          <div id="feelings-cell" class="cell">
+					            <div class="front face">
+					              <a href="#" class="feelings">
+					                <div class="content">
+					                  <div class="smiley neutral"></div>
+					                  <h3>Symptoms</h3>
+					                </div>
+					              </a>
+					            </div>
+					            <div class="back face">
+					              <h5 class="title neutral">Symptoms <div class="smiley-close"><i class="fa fa-times fa-lg"></i></div></h5>
+					              <div class="content">
+						              <h4>Out of breath</h4>
+						              <p><a href="#feelings-info" class="btn btn-large btn-block btn-warning symptoms-btn"><i class="fa fa-comment "></i> Message</a></p>
+						              <p><a href="#feelings-info" class="btn btn-large btn-block symptoms-btn">More Info</a></p>
+					              </div>
+					            </div>
+					          </div>
+					        </div>
+					      </div>
+					    </li>
+					    <li>
+					      <div class="cell-container-outer">
+					        <div class="cell-container-inner">
+					          <div id="diet-cell" class="cell">
+					            <div class="front face">
+					            	<a href="#" class="diet">
+					                <div class="content">
+					                  <div class="smiley smile"></div>
+					                  <h3>Diet</h3>
+					                </div>
+					              </a>
+					            </div>
+					            <div class="back face">
+					              <h5 class="title good">Diet <div class="smiley-close"><i class="fa fa-times fa-lg"></i></div></h5>
+					              <div class="content">
+						              <h4>Opened the fridge 2 hours ago</h4>
+						              <p><a href="#diet-info" class="btn btn-large btn-block btn-success diet-btn"><i class="fa fa-check"></i> See Meal</a></p>
+						              <p><a href="#diet-info" class="btn btn-large btn-block diet-btn">More Info</a></p>
+					              </div>
+					            </div>
+					          </div>
+					        </div>
+					      </div>
+					      <div class="cell-container-outer">
+					        <div class="cell-container-inner">
+					          <div id="activity-cell" class="cell">
+					            <div class="front face">
+												<a href="#" class="activity">
+					                <div class="content">
+					                  <div class="smiley smile"></div>
+					                  <h3>Activity</h3>
+					                </div>
+												</a>
+					            </div>
+					            <div class="back face">
+					              <h5 class="title good">Activity <div class="smiley-close"><i class="fa fa-times fa-lg"></i></div></h5>
+					              <div class="content">
+						              <h4>Walked farther than yesterday</h4>
+						              <p><a href="#activity-info" class="btn btn-large btn-block btn-success activity-btn"><i class="fa fa-gift"></i> Reward</a></p>
+						              <p><a href="#activity-info" class="btn btn-large btn-block activity-btn">More Info</a></p>
+					              </div>
+					            </div>
+					          </div>
+					        </div>
+					      </div>
+					    </li>
+					  </ul>
+					  
+					</div>
+					
+					<!-- message box -->
+				<div id="page-message" class="row" >
+					<div id="message-box">
+					  <textarea class="form-control" rows="3" placeholder="Send Dad a message..."></textarea>
+					  <div class="input-group-btn">
+		          <button type="button" class="btn btn-default btn-sm" tabindex="-1">Message</button>
+		          <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" tabindex="-1">
+		            <span class="caret"></span>
+		          </button>
+		          <ul class="dropdown-menu pull-right" role="menu">
+		            <li><a href="#"><i class="fa fa-heart"></i> Hug</a></li>
+			          <li><a href="#"><i class="fa fa-gift"></i> Reward</a></a></li>
+		          </ul>
+		        </div>
+					</div>
+				</div>
+				  
+				<!-- sections -->
+				  <div id="page-medications" class="row hidden">
+			  
+				  <div id="meds-info" class="smiley-details">
+				  	<h2>Medications
+					  	
+					  	<!-- Actions -->
+							<div class="btn-group">
+							  <button type="button" class="btn btn-default dropdown-toggle btn-danger" data-toggle="dropdown">
+							    Actions <span class="caret"></span>
+							  </button>
+							  <ul class="dropdown-menu pull-right" role="menu">
+							    <li><a href="#"><i class="fa fa-bell"></i> Remind Dad</a></li>
+							    <li class="divider"></li>
+							    <li><a href="#"><i class="fa fa-phone"></i> Call prescribing doctor</a></li>
+							    <li><a href="#"><i class="fa fa-phone"></i> Call pharmacy to reorder</a></li>
+							  </ul>
+							</div>
+				  	</h2>
+				  	<div class="alert alert-danger"><strong>Missed medications at 1:00pm</strong></div>
+				  	<table class="table table-hover">
+							<tbody>
+			          <tr class="danger">
+			            <td><i class="fa fa-times fa-lg"></i></td>
+			            <td>Captopril</td>
+			            <td>50 mg</td>
+			            <td>3x daily</td>
+			            <td><a href="javascript:void(0);"><i class="fa fa-file-text-o fa-lg"></i></a></td>
+			            <td><a href="javascript:void(0);"><i class="fa fa-user-md fa-lg"></i></a></td>
+			          </tr>
+			          <tr class="danger">
+			            <td><i class="fa fa-times fa-lg"></i></td>
+			            <td>Furosemide</td>
+			            <td>80 mg</td>
+			            <td>3x daily</td>
+			            <td><a href="javascript:void(0);"><i class="fa fa-file-text-o fa-lg"></i></a></td>
+			            <td><a href="javascript:void(0);"><i class="fa fa-user-md fa-lg"></i></a></td>
+			          </tr>
+			          <tr>
+			            <td><i class="fa fa-check fa-lg"></i></td>
+			            <td>Amlodipine</td>
+			            <td>10 mg</td>
+			            <td>1x daily</td>
+			            <td><a href="javascript:void(0);"><i class="fa fa-file-text-o fa-lg"></i></a></td>
+			            <td><a href="javascript:void(0);"><i class="fa fa-user-md fa-lg"></i></a></td>
+			          </tr>
+			          <tr>
+			            <td><i class="fa fa-check fa-lg"></i></td>
+			            <td>Aspirin</td>
+			            <td>150 mg</td>
+			            <td>1x daily</td>
+			            <td><a href="javascript:void(0);"><i class="fa fa-file-text-o fa-lg"></i></a></td>
+			            <td><a href="javascript:void(0);"><i class="fa fa-user-md fa-lg"></i></a></td>
+			          </tr>
+			          <tr>
+			            <td><i class="fa fa-check fa-lg"></i></td>
+			            <td>Isosorbide mononitrate</td>
+			            <td>60 mg</td>
+			            <td>1x daily</td>
+			            <td><a href="javascript:void(0);"><i class="fa fa-file-text-o fa-lg"></i></a></td>
+			            <td><a href="javascript:void(0);"><i class="fa fa-user-md fa-lg"></i></a></td>
+			          </tr>
+			          <tr>
+			            <td><i class="fa fa-check fa-lg"></i></td>
+			            <td>Lisinopril</td>
+			            <td>10 mg</td>
+			            <td>1x daily</td>
+			            <td><a href="javascript:void(0);"><i class="fa fa-file-text-o fa-lg"></i></a></td>
+			            <td><a href="javascript:void(0);"><i class="fa fa-user-md fa-lg"></i></a></td>
+			          </tr>
+			        </tbody>
+						</table>
+						
+						<h4>Pharmacy</h4>
+						<p>
+							Wallgreens<br>
+							1234 Wills Street<br>
+							Los Angeles, CA 94114<br>
+							(213) 123-1234<br>
+							Account # Ollinger 1249<br>
+						</p>
+						
+						<p>
+		        	<a href="#top-content">Back</a>
+		        </p>
+					</div>
+		  
+			</div>
+		  <div id="page-symptoms" class="row hidden">
+		  
+			  <div id="feelings-info" class="smiley-details">
+			  	<h2>Symptoms
+				  	
+				  	<!-- Actions -->
+						<div class="btn-group">
+						  <button type="button" class="btn btn-default dropdown-toggle btn-warning " data-toggle="dropdown">
+						    Actions <span class="caret"></span>
+						  </button>
+						  <ul class="dropdown-menu  pull-right" role="menu">
+						    <li><a href="#"><i class="fa fa-file-text-o fa-lg"></i> Check symptom notes</a></li>
+						    <li class="divider"></li>
+						    <li><a href="#"><i class="fa fa-phone"></i> Support Dad</a></li>
+						    <li><a href="#"><i class="fa fa-phone"></i> Call Dad's doctor</a></li>
+						  </ul>
+						</div>
+			  	</h2>
+			  	<div class="alert alert-warning"><strong>Out of breath</strong></div>
+			  	
+			  	<h4>Swelling</h4>
+			  	
+			  	<input type="text" class="span2 slider" value="" data-slider-min="0" data-slider-max="10" data-slider-step="1" data-slider-value="2" data-slider-orientation="horizontal" data-slider-selection="after" data-slider-tooltip="show">
+			  	<div class="scale">
+			  		<b>mild</b>
+			  		<b>enlarged</b>
+			  	</div>
+			  	
+			  	<hr>
+			  	
+			  	<h4>Shortness of breath</h4>
+			  	<input type="text" class="span2 slider" value="" data-slider-min="0" data-slider-max="10" data-slider-step="1" data-slider-value="8" data-slider-orientation="horizontal" data-slider-selection="after" data-slider-tooltip="show">
+			  	<div class="scale">
+			  		<b>none</b>
+			  		<b>gasping</b>
+			  	</div>
+			  	
+			  	<hr>
+			  	
+			  	<h4>Sleep Upright</h4>
+			  	<input type="text" class="span2 slider" value="" data-slider-min="0" data-slider-max="10" data-slider-step="1" data-slider-value="4" data-slider-orientation="horizontal" data-slider-selection="after" data-slider-tooltip="show">
+			  	<div class="scale">
+			  		<b>1 pillow</b>
+			  		<b>lazyboy</b>
+			  	</div>
+			  	
+			  	<h4>Rapid or Irregular Heartbeat</h4>
+			  	<input type="text" class="span2 slider" value="" data-slider-min="0" data-slider-max="10" data-slider-step="1" data-slider-value="4" data-slider-orientation="horizontal" data-slider-selection="after" data-slider-tooltip="show">
+			  	<div class="scale">
+			  		<b>none</b>
+			  		<b>significant</b>
+			  	</div>
+			  	
+			  	<p>
+	        	<a href="#top-content">Back</a>
+	        </p>
+			  </div>
+			  
+		  </div>
+		  
+		  <div id="page-diet" class="row hidden">
+		        
+			  <div id="diet-info" class="smiley-details">
+			  	<h2>Diet
+				  	
+				  	<!-- Actions -->
+						<div class="btn-group">
+						  <button type="button" class="btn btn-default dropdown-toggle btn-success" data-toggle="dropdown">
+						    Actions <span class="caret"></span>
+						  </button>
+						  <ul class="dropdown-menu pull-right" role="menu">
+						    <li><a href="#"><i class="fa fa-bell"></i> Remind Dad</a></li>
+						    <li class="divider"></li>
+						    <li><a href="#"><i class="fa fa-phone"></i> Support Dad</a></li>
+						  </ul>
+						</div>
+			  	</h2>
+			  	
+			  	<h4>Dinner - Oct. 27th <span class="label label-success"><i class="fa fa-check"></i></span></h4>
+			  	<img src="images/day1.jpg" width="300"/>
+			  	<p>Salmon, greens, tomatoe, cottage cheese, and tea (1 sugar)</p>
+			  	
+			  	<h4>Lunch - Oct. 27th <span class="label label-success"><i class="fa fa-check"></i></span></h4>
+			  	<img src="images/day2.jpg"  width="300"/>
+			  	<p>Peas, carrots, lima beans, chicken, rice, and water</p>
+			  	
+			  	<p>
+			  		<a href="#">Show more...</a>
+			  	</p>
+			  	
+			  	<p>
+	        	<a href="#top-content">Back</a>
+	        </p>
+			  </div>
+		  </div>
+		  
+		  <div id="page-activity" class="row hidden">
+		  
+			  <div id="activity-info" class="smiley-details">
+			  	<h2>Activity
+				  	
+				  	<!-- Actions -->
+						<div class="btn-group">
+						  <button type="button" class="btn btn-default dropdown-toggle btn-success" data-toggle="dropdown">
+						    Actions <span class="caret"></span>
+						  </button>
+						  <ul class="dropdown-menu pull-right" role="menu">
+						    <li><a href="#"><i class="fa fa-phone"></i> Encourage dad</a></li>
+						    <li><a href="#"><i class="fa fa-phone"></i> Call neighbor</a></li>
+						  </ul>
+						</div>
+			  	</h2>
+			  	
+			  	<h4>Pedometer - 800 steps</h4>
+			  	<p>200 more steps than yesterday!</p>
+	
+				  <div class="progress">
+					  <div class="progress-bar progress-bar-warning" style="width: 35%">
+					    <span class="sr-only">35% Complete (success)</span>
+					  </div>
+					  <div class="progress-bar progress-bar-success" style="width: 20%">
+					    <span class="sr-only">20% Complete (warning)</span>
+					  </div>
+					</div>
+					
+					<h4>Weight - 165 lbs</h4>
+			  	<p>You lost 1 lb.</p>
+			  	<div class="progress">
+					  <div class="progress">
+						  <div class="progress-bar progress-bar-danger" style="width: 40%">
+						    <span class="sr-only">35% Complete (success)</span>
+						  </div>
+						</div>
+			  	</div>
+			  	
+			  	
+			  	<h4>Neighbors</h4>
+			  	<ul class="list-group">
+					  <li class="list-group-item">Jim Sterns 123 Harris St. (213) 123-1234</li>
+					  <li class="list-group-item">Frank Ross 14 6<sup>th</sup> St. (213) 123-1234</li>
+					</ul>
+					
+					<p>
+	        	<a href="#top-content">Back</a>
+	        </p>
+			  </div>
+		
+	  </div> <!-- row -->
+	  
+	  	<!-- caregier -->
+	  	<div id="page-caregiver" class="row hidden">
+		  
+			  <div  class="">
+			  	<h2>Caregiver
+				  	
+				  	<!-- Actions -->
+						<div class="btn-group">
+						  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+						    Actions <span class="caret"></span>
+						  </button>
+						  <ul class="dropdown-menu pull-right" role="menu">
+						    <li><a href="#"><i class="fa fa-phone"></i> Encourage dad</a></li>
+						    <li><a href="#"><i class="fa fa-phone"></i> Call neighbor</a></li>
+						  </ul>
+						</div>
+			  	</h2>
+			  	
+			  	<div class="list-group">
+<!--
+					  <a href="#" class="list-group-item ">
+					    <h4 class="list-group-item-heading">Check In</h4>
+					  </a>
+-->
+					  <a href="#" class="list-group-item ">
+					    <h4 class="list-group-item-heading">Notes for Caregiver: 10/27/13</h4>
+					    <p class="list-group-item-text">
+					    Watch Dad take his meds and record.<br>
+					    Prepare lunch and dinner for Dad<br>
+							Take Dad for a walk around garden.<br>
+							Observe ADLs<br>
+							</p>
+					  </a>
+<!--
+					  <a href="#" class="list-group-item ">
+					    <h4 class="list-group-item-heading">Check Out</h4>
+					  </a>
+-->
+					  <a href="#" class="list-group-item ">
+					    <h4 class="list-group-item-heading">Last Caregiver: 10/25/13</h4>
+					    <p class="list-group-item-text">
+					    All tasks completed.
+							Patient had trouble walking to mailbox, required assistance. 
+							Patient is having trouble taking his water pill at 1:00pm. Makes him pee too much. 
+							Patient says he is having trouble sleeping at night without sitting up in bed. 
+							</p>
+					  </a>
+
+					</div>
+
+			  </div>
+		
+	  </div> <!-- row -->
+	  	
+	  	<!-- doctor -->
+	  	<div id="page-doctor" class="row hidden">
+		  
+			  <div  class="">
+			  	<h2>Doctor
+				  	
+				  	<!-- Actions -->
+						<div class="btn-group">
+						  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+						    Actions <span class="caret"></span>
+						  </button>
+						  <ul class="dropdown-menu pull-right" role="menu">
+						    <li><a href="#"><i class="fa fa-phone"></i> Encourage dad</a></li>
+						    <li><a href="#"><i class="fa fa-phone"></i> Call neighbor</a></li>
+						  </ul>
+						</div>
+			  	</h2>
+			  	
+			  	
+			  	<h4>Chart Summary</h4>
+			  	<img src="images/chart1.jpg" />
+			  	
+			  	<h4>Activity Summary</h4>
+			  	<img src="images/chart1.jpg" />
+			  	
+
+			  </div>
+		
+	  </div> <!-- row -->
+	  
+	  
+	  <!-- doctor -->
+	  	<div id="page-patient" class="row hidden">
+		  
+			  <div  class="">
+			  	<h2>Go Dad!
+				  	
+				  	<!-- Actions -->
+<!--
+						<div class="btn-group">
+						  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+						    Actions <span class="caret"></span>
+						  </button>
+						  <ul class="dropdown-menu pull-right" role="menu">
+						    <li><a href="#"><i class="fa fa-phone"></i> Encourage dad</a></li>
+						    <li><a href="#"><i class="fa fa-phone"></i> Call neighbor</a></li>
+						  </ul>
+						</div>
+-->
+			  	</h2>
+			  	
+			  	<div class="btn-group btn-group-justified day-list">
+						<a id="" href="#" class="btn btn-default yes">
+							<div class="center"><i class="fa fa-check-square-o fa-3x"></i></div>
+					  	<h6>Day 1</h6>
+						</a>
+						<a id="" href="#" class="btn btn-default">
+							<div class="center"><i class="fa fa-check-square-o fa-3x"></i></div>
+					  	<h6>Day 2</h6>
+						</a>
+						<a id="" href="#" class="btn btn-default">
+							<div class="center"><i class="fa fa-check-square-o fa-3x"></i></div>
+					  	<h6>Day 3</h6>
+						</a>
+						<a id="" href="#" class="btn btn-default ">
+							<div class="center"><i class="fa fa-gift fa-3x present1"></i></div>
+					  	<h6>Day 4</h6>
+						</a>
+						<a id="" href="#" class="btn btn-default ">
+							<div class="center"><i class="fa fa-square-o fa-3x"></i></div>
+					  	<h6>Day 5</h6>
+						</a>
+					</div>
+					
+					<hr>
+			  	
+			  	<div class="smiley-indicator">
+			  		<div class="smiley smile"></div>
+						<h4>Medication</h4>
+			  	</div>
+			  	
+			  	<hr>
+			  	
+			  	<div class="btn-group btn-group-justified day-list">
+						<a id="" href="#" class="btn btn-default ">
+							<div class="center"><i class="fa fa-gift fa-3x present1"></i></div>
+					  	<h6>From Tim</h6>
+						</a>
+						<a id="" href="#" class="btn btn-default ">
+							<div class="center"><i class="fa fa-gift fa-3x present2"></i></div>
+					  	<h6>From Alice</h6>
+						</a>
+						<a id="" href="#" class="btn btn-default ">
+							<div class="center"><i class="fa fa-gift fa-3x present3"></i></div>
+					  	<h6>From Ted</h6>
+						</a>
+					</div>
+
+			  </div>
+		
+	  </div> <!-- row -->
+		
+			</div><!-- .container.main-content -->
+			
+		</div>
+	</div>
+	
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+<script type="text/javascript" src="js/bootstrap/sass-bootstrap.min.js"></script>
+
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
